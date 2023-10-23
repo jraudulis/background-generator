@@ -9,7 +9,7 @@ body {
 }
 
 h1 {
-    font: 700 5em 'Lexend', sans-serif;
+    font: 700 4rem 'Lexend', sans-serif;
     color: rgba(0,0,0,.5);
     text-align: center;
     letter-spacing: .1em;
@@ -17,12 +17,12 @@ h1 {
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: 600;
 }
 
 h3 {
-    font-size:1.2em;
+    font-size:1.2rem;
     font-weight: 400;
     color: rgba(0,0,0,.5);
     text-align: center;
@@ -31,14 +31,14 @@ h3 {
 }
 
 .text-wrap{
-    margin: 3em;
+    margin: 3rem;
 }
 
 #random {
     font-family: 'Lexend', sans-serif;
     border-radius: 2px;
     border: none;
-    margin: 1.5em;
+    margin: 1.5rem;
     padding: 10px;
     font-size: 1.2rem;
     text-decoration: none;
@@ -64,7 +64,7 @@ h3 {
 
 
 @media only screen and (max-width: 600px){
-    h1{font-size: 2.2em;}
-    h2{font-size: 1.3em;}
-    h3{font-size: 1em;}
+    h1{font-size: 2.2rem;}
+    h2{font-size: 1.3rem;}
+    h3{font-size: 1rem;}
 }
