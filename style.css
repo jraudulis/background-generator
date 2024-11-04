@@ -1,16 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@200;400;500;600;700&family=Poppins:wght@700&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-	font-family: 'Lexend', sans-serif;
-    color: rgba(0,0,0,.5);
-    text-align: center;
-    top: 15%;
-	background: linear-gradient(to right, red , yellow); /* Standard syntax */
+    margin: 0;
+	font-family: "Raleway", sans-serif;
 }
 
 h1 {
-    font: 700 4rem 'Lexend', sans-serif;
-    color: rgba(0,0,0,.5);
+    font-size: 4rem;
+    font-weight: 900;
     text-align: center;
     letter-spacing: .1em;
     width: 100%;
@@ -18,35 +15,69 @@ h1 {
 
 h2 {
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 800;
 }
 
 h3 {
     font-size:1.2rem;
     font-weight: 400;
     color: rgba(0,0,0,.5);
-    text-align: center;
     text-transform: none;
     letter-spacing: 0.01em;
 }
 
+#container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#content-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+#gradient-wrapper{
+    width: 45vw;
+    height: 100%;
+    text-align: center;
+}
+#gradient{
+    height: 100%;
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 1px 15px rgb(0 0 0 / 0.3);
+}
+
+.color-input-wrap{
+    display: flex;
+    align-items: center;
+}
+
 .text-wrap{
-    margin: 3rem;
+    width: 36vw;
+    height: 60vh;
+    align-self: flex-start;
+    text-align: left;
+    box-shadow: 0 1px 15px rgb(0 0 0 / 0.1);
+    border-radius: 15px;
+    padding: 1rem;
+    margin-right: 3em;
 }
 
 #random {
     width: 150px;
     height: 50px;
-    font-family: 'Lexend', sans-serif;
-    border-radius: 50px;
+    border-radius: 5px;
     border: none;
-    margin: 1.5rem;
     padding: 10px;
     font-size: 1.2rem;
     text-decoration: none;
     cursor: pointer;
     transition: 0.3s;
-    background-color: white;
     opacity: 0.5;
 }
 
@@ -67,15 +98,48 @@ h3 {
 }
 
 
+@media(max-width: 767.98px) {
 
-
-
-@media only screen and (max-width: 600px){
-    h1{font-size: 2.2rem;}
-    h2{font-size: 1.3rem;}
-    h3{font-size: 1rem;}
-
-    #wrapper{
-        margin-top: 100px;
-    }
+h1{
+    font-size: 3rem;
 }
+
+h2{
+    font-size: 1.5rem;
+}
+
+#content-wrapper{
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+#gradient-wrapper{
+    width: 90%;
+    height: 40vh;
+}
+
+.text-wrap{
+    width: 90%;
+    height: auto;
+    align-self: unset;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.color-input-wrap{
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+button{
+    margin-bottom: 1rem;
+}
+
+.hide{
+    display: none;
+}
+
+}
+
